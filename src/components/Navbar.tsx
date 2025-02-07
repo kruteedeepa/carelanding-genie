@@ -15,10 +15,15 @@ import {
   LogOut,
   ClipboardList,
 } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate();
+
+  const handleCartClick = () => {
+    navigate('/cart');
+  };
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-jeevanti-50/80 backdrop-blur-md border-b border-jeevanti-100">
@@ -63,12 +68,14 @@ const Navbar = () => {
               </DropdownMenuContent>
             </DropdownMenu>
 
-            {/* Cart Dropdown */}
-            <Link to="/cart">
-              <Button variant="ghost" size="icon">
-                <ShoppingCart className="h-5 w-5" />
-              </Button>
-            </Link>
+            {/* Cart Icon */}
+            <Button 
+              variant="ghost" 
+              size="icon"
+              onClick={handleCartClick}
+            >
+              <ShoppingCart className="h-5 w-5" />
+            </Button>
 
             {/* Message Icon */}
             <Button variant="ghost" size="icon">
@@ -129,12 +136,14 @@ const Navbar = () => {
               <User className="mr-2 h-4 w-4" />
               Profile
             </Button>
-            <Link to="/cart">
-              <Button className="w-full justify-start" variant="ghost">
-                <ShoppingCart className="mr-2 h-4 w-4" />
-                Cart
-              </Button>
-            </Link>
+            <Button 
+              className="w-full justify-start" 
+              variant="ghost"
+              onClick={handleCartClick}
+            >
+              <ShoppingCart className="mr-2 h-4 w-4" />
+              Cart
+            </Button>
             <Button className="w-full justify-start" variant="ghost">
               <MessageCircle className="mr-2 h-4 w-4" />
               Messages
