@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import {
@@ -14,6 +15,7 @@ import {
   LogOut,
   ClipboardList,
 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,12 +26,12 @@ const Navbar = () => {
         <div className="flex justify-between h-16 items-center">
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center">
-            <a
-              href="/"
+            <Link
+              to="/"
               className="text-2xl font-semibold text-jeevanti-900 hover:text-jeevanti-700 transition-colors"
             >
               Jeevanti Care
-            </a>
+            </Link>
           </div>
 
           {/* Desktop Navigation */}
@@ -62,16 +64,11 @@ const Navbar = () => {
             </DropdownMenu>
 
             {/* Cart Dropdown */}
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild>
-                <Button variant="ghost" size="icon">
-                  <ShoppingCart className="h-5 w-5" />
-                </Button>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent align="end" className="w-48">
-                <div className="p-4 text-sm text-gray-500">No items in cart</div>
-              </DropdownMenuContent>
-            </DropdownMenu>
+            <Link to="/cart">
+              <Button variant="ghost" size="icon">
+                <ShoppingCart className="h-5 w-5" />
+              </Button>
+            </Link>
 
             {/* Message Icon */}
             <Button variant="ghost" size="icon">
@@ -132,10 +129,12 @@ const Navbar = () => {
               <User className="mr-2 h-4 w-4" />
               Profile
             </Button>
-            <Button className="w-full justify-start" variant="ghost">
-              <ShoppingCart className="mr-2 h-4 w-4" />
-              Cart
-            </Button>
+            <Link to="/cart">
+              <Button className="w-full justify-start" variant="ghost">
+                <ShoppingCart className="mr-2 h-4 w-4" />
+                Cart
+              </Button>
+            </Link>
             <Button className="w-full justify-start" variant="ghost">
               <MessageCircle className="mr-2 h-4 w-4" />
               Messages
