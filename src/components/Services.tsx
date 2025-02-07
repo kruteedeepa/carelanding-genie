@@ -3,8 +3,8 @@ import {
   Stethoscope,
   Activity,
   Heart,
-  Yoga,
-  Pills,
+  Dumbbell, // Replacing Yoga with Dumbbell as it's more suitable
+  Pill, // Changed from Pills to Pill (correct name)
 } from "lucide-react";
 
 const services = [
@@ -25,12 +25,12 @@ const services = [
   },
   {
     title: "Yoga",
-    icon: Yoga,
+    icon: Dumbbell,
     description: "Wellness through traditional practices",
   },
   {
     title: "Order Medicines",
-    icon: Pills,
+    icon: Pill,
     description: "Quick and reliable medicine delivery",
   },
 ];
