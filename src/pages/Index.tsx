@@ -11,7 +11,7 @@ const diseases = [
   },
   { 
     name: "Typhoid", 
-    image: "https://www.maxlab.co.in/category/1668412838.jpg", 
+    image: "https://www.ckbhospital.com/wp-content/uploads/2022/08/Typhoid-Signs-and-Symptoms-1.jpg", 
     link: "/diseases/typhoid" 
   },
   { 
@@ -26,22 +26,22 @@ const diseases = [
   },
   { 
     name: "Kidney", 
-    image: "https://images.ctfassets.net/uwf0n1j71a7j/7JDSZObaNaqP1aoHHEh0bY/53840215c7d46b1ef369c9e4d0d76850/kidney-pain.png?w=3840&q=75", 
+    image: "https://www.durhamnephrology.com/wp-content/uploads/2020/11/image1.jpg", 
     link: "/diseases/kidney" 
   },
   { 
     name: "Liver", 
-    image: "/lovable-uploads/daf86d1a-63ca-4c91-b2db-4c271bb2c5e9.png", 
+    image: "https://images.ctfassets.net/uwf0n1j71a7j/7JDSZObaNaqP1aoHHEh0bY/53840215c7d46b1ef369c9e4d0d76850/kidney-pain.png?w=3840&q=75", 
     link: "/diseases/liver" 
   },
   { 
     name: "Pregnancy", 
-    image: "/lovable-uploads/daf86d1a-63ca-4c91-b2db-4c271bb2c5e9.png", 
+    image: "https://tse1.mm.bing.net/th?id=OIP.zDOdyB83V77auF3ws3J67QHaEK&pid=Api&P=0&h=180", 
     link: "/diseases/pregnancy" 
   },
   { 
     name: "Thyroid", 
-    image: "/lovable-uploads/daf86d1a-63ca-4c91-b2db-4c271bb2c5e9.png", 
+    image: "https://tse1.mm.bing.net/th?id=OIP.qZgr6yElKpPVaA4dkRGbpQHaE8&pid=Api&P=0&h=180", 
     link: "/diseases/thyroid" 
   },
 ];
