@@ -8,7 +8,14 @@ import {
 } from "lucide-react";
 import { Link } from "react-router-dom";
 
-const services = [
+interface Service {
+  title: string;
+  icon: React.ComponentType<{ className?: string }>;
+  description: string;
+  link?: string;
+}
+
+const services: Service[] = [
   {
     title: "Doctor Consultation",
     icon: Stethoscope,
