@@ -4,14 +4,46 @@ import Hero from "@/components/Hero";
 import Services from "@/components/Services";
 
 const diseases = [
-  { name: "Vitamin Deficiency", image: "/lovable-uploads/daf86d1a-63ca-4c91-b2db-4c271bb2c5e9.png", link: "/diseases/vitamin-deficiency" },
-  { name: "Typhoid", image: "/lovable-uploads/daf86d1a-63ca-4c91-b2db-4c271bb2c5e9.png", link: "/diseases/typhoid" },
-  { name: "Diabetes", image: "/lovable-uploads/daf86d1a-63ca-4c91-b2db-4c271bb2c5e9.png", link: "/diseases/diabetes" },
-  { name: "Allergy", image: "/lovable-uploads/daf86d1a-63ca-4c91-b2db-4c271bb2c5e9.png", link: "/diseases/allergy" },
-  { name: "Kidney", image: "/lovable-uploads/daf86d1a-63ca-4c91-b2db-4c271bb2c5e9.png", link: "/diseases/kidney" },
-  { name: "Liver", image: "/lovable-uploads/daf86d1a-63ca-4c91-b2db-4c271bb2c5e9.png", link: "/diseases/liver" },
-  { name: "Pregnancy", image: "/lovable-uploads/daf86d1a-63ca-4c91-b2db-4c271bb2c5e9.png", link: "/diseases/pregnancy" },
-  { name: "Thyroid", image: "/lovable-uploads/daf86d1a-63ca-4c91-b2db-4c271bb2c5e9.png", link: "/diseases/thyroid" },
+  { 
+    name: "Vitamin Deficiency", 
+    image: "https://www.thesun.co.uk/wp-content/uploads/2025/02/high-angle-view-man-rubbing-970831265.jpg?crop=1&h=483&quality=100&strip=all&w=724", 
+    link: "/diseases/vitamin-deficiency" 
+  },
+  { 
+    name: "Typhoid", 
+    image: "https://www.maxlab.co.in/category/1668412838.jpg", 
+    link: "/diseases/typhoid" 
+  },
+  { 
+    name: "Diabetes", 
+    image: "https://internalmedicine.usc.edu/wp-content/uploads/2021/11/man-takes-diabetes-test.jpg", 
+    link: "/diseases/diabetes" 
+  },
+  { 
+    name: "Allergy", 
+    image: "https://londondermatologyclinics.com/wp-content/uploads/2023/06/skin-allergy.jpg", 
+    link: "/diseases/allergy" 
+  },
+  { 
+    name: "Kidney", 
+    image: "https://images.ctfassets.net/uwf0n1j71a7j/7JDSZObaNaqP1aoHHEh0bY/53840215c7d46b1ef369c9e4d0d76850/kidney-pain.png?w=3840&q=75", 
+    link: "/diseases/kidney" 
+  },
+  { 
+    name: "Liver", 
+    image: "/lovable-uploads/daf86d1a-63ca-4c91-b2db-4c271bb2c5e9.png", 
+    link: "/diseases/liver" 
+  },
+  { 
+    name: "Pregnancy", 
+    image: "/lovable-uploads/daf86d1a-63ca-4c91-b2db-4c271bb2c5e9.png", 
+    link: "/diseases/pregnancy" 
+  },
+  { 
+    name: "Thyroid", 
+    image: "/lovable-uploads/daf86d1a-63ca-4c91-b2db-4c271bb2c5e9.png", 
+    link: "/diseases/thyroid" 
+  },
 ];
 
 const Index = () => {
