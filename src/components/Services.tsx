@@ -2,7 +2,7 @@
 import {
   Stethoscope,
   Activity,
-  Heart,
+  MessageSquare,
   Dumbbell,
   Pill,
 } from "lucide-react";
@@ -20,13 +20,12 @@ const services = [
     description: "Comprehensive health screenings and diagnostics",
   },
   {
-    title: "Diseases",
-    icon: Heart,
-    description: "Information and treatment for various conditions",
-    link: "/diseases"
+    title: "Health Chat",
+    icon: MessageSquare,
+    description: "Get instant answers to your health queries",
   },
   {
-    title: "Yoga",
+    title: "Yoga & Wellness",
     icon: Dumbbell,
     description: "Wellness through traditional practices",
   },
